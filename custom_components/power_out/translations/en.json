@@ -1,0 +1,39 @@
+{
+  "title": "Power Out",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Power Out reference scenario",
+        "description": "Hypothetical April 2026 Annex 2 Variable Rota reference. This does not confirm NESO activation or actual supply. Low-Level plans require event-specific instructions and are not calculated. Dates are rota dates starting at 00:30 Europe/London; the end date is inclusive.",
+        "data": {
+          "rota": "Load block (rota letter)",
+          "level": "Reference level",
+          "plan_type": "Plan type",
+          "start_date": "First rota date (00:30 UK)",
+          "end_date": "Last rota date (through 00:30 next day)"
+        }
+      }
+    },
+    "error": {
+      "invalid_scenario": "Choose a valid block, level 1\u201318 and ordered date range of no more than 367 rota dates."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Change reference scenario",
+        "description": "Hypothetical April 2026 Annex 2 Variable Rota reference. This does not confirm NESO activation or actual supply. Low-Level plans require event-specific instructions and are not calculated. Dates are rota dates starting at 00:30 Europe/London; the end date is inclusive.",
+        "data": {
+          "rota": "Load block (rota letter)",
+          "level": "Reference level",
+          "plan_type": "Plan type",
+          "start_date": "First rota date (00:30 UK)",
+          "end_date": "Last rota date (through 00:30 next day)"
+        }
+      }
+    },
+    "error": {
+      "invalid_scenario": "Choose a valid block, level 1\u201318 and ordered date range of no more than 367 rota dates."
+    }
+  }
+}
