@@ -82,7 +82,7 @@ pip install homeassistant==2026.11.0
 python scripts/smoke_homeassistant.py
 ```
 
-Additional fixture tests use `pytest-homeassistant-custom-component==0.13.375` (HA 2026.10.4) in a separate environment: `pytest tests/ha -v`. CI keeps that environment separate from the 2026.11.0 smoke test and runs hassfest and official HACS validation. A local test result does not establish that remote checks passed.
+Additional fixture tests use `pytest-homeassistant-custom-component==0.13.375` (HA 2026.10.4) in a separate environment: `python -m pytest tests/ha -v`. CI keeps that environment separate from the 2026.11.0 smoke test and runs hassfest and official HACS validation. A local test result does not establish that remote checks passed.
 
 For removal, delete the helper/config entry through Home Assistant before uninstalling its repository. References in dashboards or automations must be removed or changed separately.
 
