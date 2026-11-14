@@ -1,0 +1,24 @@
+set_scenario:
+  name: Set reference scenario
+  description: Change the shared reference letter or level. Preserves plan type and validity dates; does not activate restrictions.
+  fields:
+    entity_id:
+      name: Power Out reference entity
+      required: true
+      selector:
+        entity:
+          filter:
+            - integration: power_out
+    rota:
+      name: Rota letter
+      selector:
+        select:
+          options: [A, B, C, D, E, G, H, J, K, L, M, N, P, Q, R, S, T, U]
+    level:
+      name: Reference level
+      selector:
+        number:
+          min: 1
+          max: 18
+          step: 1
+          mode: box

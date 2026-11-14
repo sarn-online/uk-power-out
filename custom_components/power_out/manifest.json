@@ -1,0 +1,15 @@
+{
+  "domain": "power_out",
+  "name": "Power Out",
+  "codeowners": [
+    "@sarn-online"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/sarn-online/uk-power-out#readme",
+  "integration_type": "helper",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/sarn-online/uk-power-out/issues",
+  "requirements": [],
+  "version": "0.1.2"
+}
